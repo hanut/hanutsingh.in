@@ -1,7 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Hanut Singh Gusain | Serial entrepreneur, solutions architect and technology consultant`,
+    description: `
+    Experienced cloud systems architect, business analyst, team lead and tech entrepreneur. 
+    Having worked on projects spanning a wide array of business domains, I am well versed with the latest 
+    technologies and platforms such as Node.js, Golang, React, Vuejs, Docker + Kubernetes, 
+    AWS/Azure/GCP and mobile app development. I love learning and keeping up with the latest in 
+    the ever evolving software landscape. 
+    `,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -22,9 +28,15 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        theme_color: `#dd9900`,
+        display: `standalone`,
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `typography`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
