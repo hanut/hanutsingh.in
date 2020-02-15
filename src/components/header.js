@@ -2,8 +2,6 @@ import { Link } from "gatsby"
 import React from "react"
 import HeaderLogo from "./header-logo";
 
-import "./layout.css"
-
 const Header = () => (
   <header>
     <div className="flexbox">
@@ -14,9 +12,10 @@ const Header = () => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            fontWeight: `300`
           }}
         >
-          Hanut S. Gusain
+          anut S. Gusain
         </Link>
       </h1>
     </div>
