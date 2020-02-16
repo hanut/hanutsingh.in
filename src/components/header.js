@@ -5,15 +5,11 @@ import HeaderLogo from "./header-logo";
 const Header = () => (
   <header>
     <div className="flexbox">
-      <HeaderLogo></HeaderLogo>
+      <HeaderLogo/>
       <h1>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-            fontWeight: `300`
-          }}
+          title="Hanut Singh Gusain"
         >
           anut S. Gusain
         </Link>

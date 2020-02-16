@@ -2,8 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const TechStackImg = () => {
-  const data = useStaticQuery(graphql`
+const HomeJumbo = () => {
+  const techstackImage = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "tech-stack.jpg" }) {
         childImageSharp {
@@ -15,7 +15,12 @@ const TechStackImg = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <>
+      <Img fluid={techstackImage.placeholderImage.childImageSharp.fluid} />
+      <Img fluid={techstackImage.placeholderImage.childImageSharp.fluid} />
+    </>
+  )
 }
 
-export default TechStackImg
+export default HomeJumbo

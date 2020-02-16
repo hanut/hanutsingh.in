@@ -3,16 +3,15 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import TechstackImg from "../components/tech-stack"
 import SEO from "../components/seo"
 import Fonts from "../components/fonts"
-import TechStackImg from "../components/tech-stack"
+import HomeJumbo from "../components/homejumbo"
 
 const IndexPage = () => (
   <Layout>
     <Fonts/>
     <SEO title="Home" />
-    <TechStackImg/>
+    <HomeJumbo/>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

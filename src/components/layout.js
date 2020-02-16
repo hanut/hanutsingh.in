@@ -32,8 +32,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <footer>
-        © {new Date().getFullYear()}, 
-        {` `}
+        © {new Date().getFullYear()},
         <a href="https://hanutsingh.in">Hanut S. Gusain</a>
       </footer>
     </>
